@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../resources/icons/fonts/icomoon.eot?p912xg');
+    src:  url('../resources/icons/fonts/icomoon.eot?p912xg#iefix') format('embedded-opentype'),
+      url('../resources/icons/fonts/icomoon.ttf?p912xg') format('truetype'),
+      url('../resources/icons/fonts/icomoon.woff?p912xg') format('woff'),
+      url('../resources/icons/fonts/icomoon.svg?p912xg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-caledar:before {
+    content: "\e900";
+  }
+  .icon-clock:before {
+    content: "\e901";
+  }
+  .icon-location:before {
+    content: "\e902";
+  }
+  .icon-M:before {
+    content: "\e903";
+  }
+  .icon-rub:before {
+    content: "\e904";
+  }
+
+  .ts-icon{
+    color: #7e83aa;
+    font-size: 12px;
+  }
+
+
+
+  ///////////////////////////ROBOTO////////////////////////////////////////////////////////
+
+  @font-face {
+    font-family: 'roboto';
+    src:  url('../resources/fonts/Roboto-Light.ttf');
+     
+  }
+
+  //////////////////////////////////////////////////////////////////////////////////

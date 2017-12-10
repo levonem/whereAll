@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm7vjbMonqcJyzWNuYpVulb7wmiLxoBTU&callback=initMap"> -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm7vjbMonqcJyzWNuYpVulb7wmiLxoBTU&libraries=places&callback=initAutocomplete"
+         ></script>
+
+    </script>
+</head>
+
+<body>
+    <div class="wraper">
+        <header>
+
+            <div class="logo">
+                <img src="resources/img/logo.png" alt="logo">
+            </div>
+
+            <div class="search">
+                <a href="#" id="img_location">
+                    <img id="img-ditection" src="resources/img/direction.png" title="find your location" alt="ditection">
+                </a>
+                <form>
+                    <input id="searchLocNow" class="search-location" type="text" value="location" readonly>
+                </form>
+            </div>
+
+            <div class="right-icons">
+                <div class="cricle-plus" id="searchMap">
+                    <div class="plus fa fa-plus" aria-hidden="true"></div>
+                </div>
+                <div class="bell">
+                    <a href="#">
+                        <i class="fa fa-bell-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="profile">
+                    <a class="profile-pic" href="#"></a>
+                </div>
+            </div>
+
+        </header>
+        <div class="content">
+            <section>
+                <div class="main-items">
+                    <a href="#События" class="menu-items main_link_active" id="dev">
+                        <div>События</div>
+                    </a>
+                    <a href="#Диалоги" class="menu-items" id="dialogs">
+                        <div>Диалоги</div>
+                    </a>
+                    <a href="#Люди" class="menu-items" id="people">
+                        <div>Люди</div>
+                    </a>
+                </div>
+
+                <div class="second-items">
+                    <a href="#Ждут" class="menu-items second_link_active" id="waiting">
+                        <div>Ждут ответа</div>
+                    </a>
+                    <a href="#планах" class="menu-items" id="plans">
+                        <div>В планах</div>
+                    </a>
+                    <a href="#Прошедшие" class="menu-items" id="past">
+                        <div>Прошедшие</div>
+                    </a>
+                    <a href="#Мои" class="menu-items" id="my">
+                        <div>Мои</div>
+                    </a>
+                </div>
+
+                <div id="eventsList">
+
+                </div>
+                <!-- template -->
+                <template id="eventTemplate">
+                    <div class="dev-info">
+                        <div class="info-header">
+                            <h3 class="title">{{title}}</h3>
+                            <div class="info">
+                                <div class="main-info">
+                                    <div class="main-info-row">
+                                        <div class="info-block">
+                                            <span class="ts-icon icon-caledar"></span>
+                                            <span class="info-content">{{dayAndMonth}}</span>
+                                        </div>
+
+                                        <div class="info-block">
+                                            <span class="ts-icon icon-clock"></span>
+                                            <input class="info-content" type="time" disabled value="{{time}}" id="dev-time">
+                                        </div>
+
+                                        <div class="info-block">
+                                            <span class="ts-icon icon-rub"></span>
+                                            <span class="info-content">{{price}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="main-info-row">
+                                        <div class="info-block">
+                                            <span class="ts-icon icon-M"></span>
+                                            <span class="info-content">{{metro}}</span>
+                                        </div>
+                                        <div class="info-block">
+                                            <span class="ts-icon icon-location"></span>
+                                            <span class="info-content">{{address}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="info-img">
+                                    <img src="resources/img/no-img.jpg" alt="">
+                                    <div>
+                                        <a href="#">Без решения
+                                            <i class="fa fa-angle-down "></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="user">
+                            <div class="user-info">
+                                <img src="resources/img/default-user.png" alt="user-img">
+                                <div class="user-name">{{userName}}</div>
+                            </div>
+                            <div>
+                                <p class="user-message">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, dolores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+                <!-- template END -->
+                <div id="aa"></div>
+            </section>
+            <aside>
+                <div id="map"></div>
+
+            </aside>
+        </div>
+        <footer>
+            <a class="footer-links" href="#footer">Как добавить событие</a>
+            <a class="footer-links" href="#footer">Справка</a>
+            <a class="footer-links" href="#footer">Найти друзей</a>
+        </footer>
+    </div>
+</body>
+<script async src="js/main.js"></script>
+
+</html>
